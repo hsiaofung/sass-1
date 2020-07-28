@@ -1,0 +1,23 @@
+.box1 {
+  text-align: center;
+  width: 100px;
+  padding: 20px;
+}
+
+%box2 {
+  text-align: center;
+  width: 100px;
+  padding: 20px;
+}
+
+.box4 {
+  @extend .box1;
+}
+
+.box5 {
+  @extend %box2;
+}
+
+.box6 {
+  @extend %box2;
+}

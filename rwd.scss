@@ -1,0 +1,36 @@
+@mixin respond-rwd($breakpoint) {
+  $mobile: 767px;
+  $tablet-min: 768px;
+  $tablet: 1023px;
+  $desktop: 1024px;
+
+  @if $breakpoint== 'mobile' {
+    @media all and (max-width: $mobile) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet' {
+    @media all and (min-width: $tablet-min) and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $breakpoint == 'desktop' {
+    @media all and (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
+@include respond-rwd(mobile) {
+  .box {
+    color: red;
+  }
+}
+@include respond-rwd(tablet) {
+  .box {
+    color: blue;
+  }
+}
+@include respond-rwd(desktop) {
+  .box {
+    color: green;
+  }
+}

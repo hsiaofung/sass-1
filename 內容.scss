@@ -1,0 +1,13 @@
+@mixin contents($width-num) {
+  width: $width-num;
+  height: $width-num/2;
+  @content;
+}
+
+.contents {
+  @include contents(100px) {
+    .box1 {
+      text-align: center;
+    }
+  }
+}

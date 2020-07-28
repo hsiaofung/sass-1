@@ -1,0 +1,21 @@
+$font-base: 10;
+
+h1 {
+  font-size: $font-base * 3;
+}
+
+h2 {
+  font-size: $font-base * 2;
+}
+
+//無條件捨去
+h3 {
+  font-size: floor($font-base * 1.8);
+}
+
+h4 {
+  font-size: $font-base * 1;
+}
+//round 四捨五入
+//ceil 無條件進入
+//floor 無條件捨去

@@ -1,0 +1,7 @@
+$for_num: 100;
+
+@for $i from 1 through $for_num {
+  .col_#{$i} {
+    width: 60px * $i;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin grid-line($cols) {
+  @for $i from 1 through $cols {
+    .col-#{$i} {
+      width: ($i / $cols) * 100%;
+    }
+  }
+}
+// grid
+@include grid-line(12);

@@ -1,0 +1,11 @@
+@mixin box-width($width) {
+  .box-wrapper {
+    @if $width>=100px {
+      width: $width;
+    } @else {
+      width: $width * 2;
+    }
+  }
+}
+
+@include box-width(100px);
