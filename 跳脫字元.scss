@@ -1,0 +1,6 @@
+@mixin widths($num-list, $num-width) {
+  #{$num-list} {
+    width: $num-width;
+  }
+}
+@include widths(classname, 100px);

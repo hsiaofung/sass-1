@@ -1,0 +1,16 @@
+$num: 30em;
+$red-color: #f00;
+$blue-color: blue;
+
+h1 {
+  font-size: $num;
+}
+
+h2 {
+  font-size: $num;
+  color: $blue-color;
+}
+
+span {
+  margin: 10px;
+}

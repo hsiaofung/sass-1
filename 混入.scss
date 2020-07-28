@@ -1,0 +1,14 @@
+@mixin text1($nums, $colors) {
+  span {
+    font-size: $nums;
+    color: colors;
+    dd {
+      text-align: center;
+    }
+  }
+}
+
+@include text1(1em, #000);
+.box2 {
+  @include text1(2em, #f00);
+}
